@@ -8,7 +8,8 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
- * Created by wujiabin on 14-2-12.
+ * @author  wujiabin
+ * @date 14-2-12
  */
 public class AtomicIntegerTest {
     @Test
