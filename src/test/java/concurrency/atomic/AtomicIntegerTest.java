@@ -44,10 +44,10 @@ public class AtomicIntegerTest {
         for (Thread t : threads) {
             t.start();
         }
-//        for (Thread t : threads) {
-//            t.join();
-//        }
-        threads[threadSize-1].join();
+        for (Thread t : threads) {
+            t.join();
+        }
+//        threads[threadSize-1].join();
         assertThat(value.get(), is(threadSize * iteration));
     }
 }
